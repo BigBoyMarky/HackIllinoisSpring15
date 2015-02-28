@@ -9,6 +9,7 @@ body {
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	background-image: url("../images/background.jpg");
 	background-repeat: both;
+
 }
 
 #navbar {
@@ -242,6 +243,7 @@ body {
 	word-wrap:break-word;
 	background-color: #fff;
 	border-radius: 10px;
+	opacity:0.9;
 }
 
 .post .profile {
@@ -289,13 +291,26 @@ body {
 
 
 	width:50%;
+	height:500px;
 	margin:0 auto;
 	font-size:12px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-weight:bold;
+	background-color:#fff;
+	border:3px solid #fff;
+	border-radius:10px;
+	text-align:center;
+	vertical-align:middle;
+	opacity:0.9;
 
 
 
+}
 
+#signup_button {
+
+	height:25px;
+	width:80px;
+	border-radius:5px;
 }
 
