@@ -42,7 +42,7 @@ body {
 	
 	background-color:#27303E;
 	display:table;
-	width:200px;
+	width:150px;
 	height:50px;
 	float:left;
 	
@@ -218,11 +218,8 @@ body {
 
 	overflow: scroll;
 	height: 550px; 
-	border: 10px solid;
-	border-color:#66CCFF;
 	padding-left:10px;
 	padding-right:10px;
-	border-radius:20px;
 
 }
 
