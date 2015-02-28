@@ -51,16 +51,27 @@ $(document).ready(function () {
         $(".scroll-height").text(height);
 
         if (isScrolledToEnd) {
-            var additionalContent = GetMoreContent(); // Get the additional content
+            var additionalContent = GetMoreContent("twitter", "images/placement/placementbird.", "Tweet", "DateHere"); // Get the additional content
 
             $this.append(additionalContent); // Append the additional content
 
         }
     });
 });
+//site takes in twitter, facebook, or googleplus.  content is a string with the post, including images. timePosted is also a string(?)
+function GetMoreContent(site, profilePic, content, timePosted) {
+    var siteName = "";
+    if (site == "facebook") {
+        siteName = "Facebook";
+    } else if (site == "twitter") {
+        siteName = "Twitter";
+    } else if (site == "googleplus") {
+        siteName = "Google+";
+    }
 
-function GetMoreContent() {
-    return  "<p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p>";
+    var codeBlock = '<div class="post ' + site + 'post"><img src="' + profilePic + '" class="profile"/>' + content + '<div class="bottom">Posted from ' + siteName + ' at ' + timePosted + '</div></div>';
+
+    return codeBlock;
 }
 
 $(document).ready( function() {
