@@ -209,9 +209,9 @@ body {
 
 
 #whitespace {
-
 	min-height:100px;
 	max-height:100px;
+	z-index: -50;
 
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .post .profile {
-	max-width: 150px;
+	max-width: 100px;
 	float: left;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -286,10 +286,6 @@ body {
 
 
 #signup {
-
-
-
-
 	width:50%;
 	height:500px;
 	margin:0 auto;
@@ -322,14 +318,8 @@ body {
 
 }
 
-#signup_button_wrapper {
-
-	margin:auto 0;
-
-}
 
 #signup_button {
-
 	height:25px;
 	width:80px;
 	border-radius:5px;
