@@ -299,11 +299,32 @@ body {
 	background-color:#fff;
 	border:3px solid #fff;
 	border-radius:10px;
-	text-align:center;
-	vertical-align:middle;
 	opacity:0.9;
 
 
+
+}
+
+#signup_left {
+
+	width:50%;
+	float:left;
+	text-align:center;
+	height:330px;
+
+}
+
+#signup_right {
+
+	margin-left:50%;
+	text-align:center;
+	height:330px;
+
+}
+
+#signup_button_wrapper {
+
+	margin:auto 0;
 
 }
 
