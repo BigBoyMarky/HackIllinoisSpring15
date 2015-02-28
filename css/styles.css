@@ -26,7 +26,7 @@ body {
 
 #navbar_wrapper {
 	
-	margin:0 auto;
+	margin:-3px auto;
 	text-align:left;
 	float:left;
 	
@@ -54,7 +54,7 @@ body {
 
 	max-height:63px;
 	float:left;
-	border-color:#27303E;;
+	border-color:#27303E;
 	border: 1px solid;
 }
 
@@ -120,7 +120,7 @@ body {
 
 	position:absolute;
 	display:inline-block;
-	right:107px;
+	right:110px;
 	border-left:2px solid;
 	border-color:#27303E;
 }
@@ -129,10 +129,12 @@ body {
 
 	font-size:14px;
 	position:fixed;
-	right:0;
+	right:5px;
+	top: 68px;
+	width: 216px;
 	padding-right:15px;
 	display:none;
-
+	background-color: rgba(192,192,192,0.5);
 }
 
 .settingsbutton {
@@ -205,6 +207,7 @@ body {
 	padding-top: 10px;
 	margin-top: 20px;
 	word-wrap:break-word;
+	font-weight: normal;
 }
 
 .post .profile {
@@ -223,7 +226,17 @@ body {
 	padding-bottom: 2px;
 }
 
+.twitterpost {
+	border: 2px solid #55ACEE;
+}
 
+.googlepluspost {
+	border: 2px solid #DD4B39;
+}
+
+.facebookpost {
+	border: 2px solid #45629D;
+}
 
 
 .contentfade {
