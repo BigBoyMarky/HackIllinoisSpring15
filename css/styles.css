@@ -209,8 +209,7 @@ body {
 
 
 #whitespace {
-	min-height:100px;
-	max-height:100px;
+	height: 67px;
 	z-index: -50;
 
 }
