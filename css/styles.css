@@ -137,6 +137,14 @@ body {
 	background-color: rgba(192,192,192,0.5);
 }
 
+#settingspanel h1 {
+	font-size: inherit;
+	width: 100%;
+	background-color: #abcdef;
+	padding-left: 10px;
+	margin-bottom: -5px;
+}
+
 .settingsbutton {
 	
 	background:none!important;
