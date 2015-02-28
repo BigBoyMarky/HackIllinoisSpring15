@@ -7,7 +7,6 @@ body {
 	font-family:Arial;
 	font-size:14px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-	font-weight:bold;
 	
 }
 
@@ -92,7 +91,7 @@ body {
 	-ms-transition:all 1.5s ease;
 	-o-transition:all 1.5s ease;
 	transition:all 1.5s ease;
-	background-color:#807E7E;
+	background-color:#97C9FC;
 	
 }
 
@@ -132,17 +131,29 @@ body {
 	right:5px;
 	top: 68px;
 	width: 216px;
-	padding-right:15px;
+	padding-right:5px;
 	display:none;
-	background-color: rgba(192,192,192,0.5);
+	background-color: rgba(151,201,252,0.5);
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px; 
 }
 
 #settingspanel h1 {
 	font-size: inherit;
-	width: 100%;
+	width: inherit;
 	background-color: #abcdef;
 	padding-left: 10px;
 	margin-bottom: -5px;
+}
+
+#settingspanel li {
+	font-weight: normal;
+	list-style-type: none;
+	line-height: 20px;
+}
+
+#settingspanel input {
+	border: none;
 }
 
 .settingsbutton {
@@ -215,7 +226,6 @@ body {
 	padding-top: 10px;
 	margin-top: 20px;
 	word-wrap:break-word;
-	font-weight: normal;
 }
 
 .post .profile {
