@@ -214,6 +214,16 @@ body {
 }
 
 
+#infinite_scrolling_div {
+
+	overflow: scroll;
+	height: 550px; 
+	border: 10px solid;
+	border-color:#66CCFF;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:20px;
+}
 
 .post {
 	margin-left:auto;

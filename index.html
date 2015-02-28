@@ -18,7 +18,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 		<script src = "script.js"></script>
-		   		   
+
 		   
 		<script>
 
@@ -44,14 +44,34 @@
 
 		</script>
 
-		<!--<script>
 
-			$(document).ready(function(){
-			$("#settingspanel").slideDown(450);});
 
-		</script>-->
+<script type="text/javascript">
+            $(document).ready(function () {
+                $("div").scroll(function () {
+                    var $this = $(this);
+                    var height = this.scrollHeight - $this.height(); // Get the height of the div
+                    var scroll = $this.scrollTop(); // Get the vertical scroll position
 
- 
+                    var isScrolledToEnd = (scroll >= height);
+
+                    $(".scroll-pos").text(scroll);
+                    $(".scroll-height").text(height);
+
+                    if (isScrolledToEnd) {
+                        var additionalContent = GetMoreContent(); // Get the additional content
+
+                        $this.append(additionalContent); // Append the additional content
+
+                    }
+                });
+            });
+
+            function GetMoreContent() {
+                return  "<p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p>";
+            }
+        </script>
+
 
 
 <script src="popup.js"></script>
@@ -135,11 +155,18 @@
 
 
 
+        <div id = "infinite_scrolling_div">
+
+        <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+        <div class="post googlepluspost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
 
 
 
-
+        <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
         <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
@@ -155,49 +182,25 @@
         <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
 
-
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
-
-
-
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+        <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
 
 
 
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+        <div class="post googlepluspost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
 
 
 
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+        <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+            
 
 
 
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
-
+        </div> <!-- end div for the infinite scrolling --> 
 
 
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
-
-
-
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
-
-
-
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
-
-
-
-
-        <div class="post"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
 
 </div>
 	</body>

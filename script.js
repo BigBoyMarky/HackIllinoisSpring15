@@ -10,10 +10,19 @@
 //     }
 // }
 
-function showSettings() { 
+/*function showSettings() { 
     if (document.getElementById("settingspanel").style.display==="block") {
         document.getElementById("settingspanel").style.display = "none"; 
     } else { 
         $("#settingspanel").slideDown(450);; 
     }
+}*/
+
+function showSettings() { 
+	if(document.getElementById("settingspanel").style.display==="block") { 
+		$("#settingspanel").slideUp(450); 
+	} 
+	else { 
+		$("#settingspanel").slideDown(450); 
+	} 
 }
