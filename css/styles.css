@@ -223,6 +223,11 @@ body {
 	padding-left:10px;
 	padding-right:10px;
 	border-radius:20px;
+
+}
+
+#infinite_scrolling_div::-webkit-scrollbar { 
+    display: none; 
 }
 
 .post {
