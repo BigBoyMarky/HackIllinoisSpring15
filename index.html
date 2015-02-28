@@ -19,65 +19,6 @@
 
 		<script src = "script.js"></script>
 
-		   
-		<script>
-
-			$(document).ready(function(){
-			$("#navbar").delay(300).slideDown(450);});
-
-		</script>
-
-
-
-		<script>
-
-			$(document).ready(function(){
-			$("#homepic").fadeIn(1000)});
-
-		</script>
-
-
-		<script>
-
-			$(document).ready(function(){
-			$(".contentfade").delay(500).fadeIn(1000)});
-
-		</script>
-
-
-
-<script type="text/javascript">
-            $(document).ready(function () {
-                $("div").scroll(function () {
-                    var $this = $(this);
-                    var height = this.scrollHeight - $this.height(); // Get the height of the div
-                    var scroll = $this.scrollTop(); // Get the vertical scroll position
-
-                    var isScrolledToEnd = (scroll >= height);
-
-                    $(".scroll-pos").text(scroll);
-                    $(".scroll-height").text(height);
-
-                    if (isScrolledToEnd) {
-                        var additionalContent = GetMoreContent(); // Get the additional content
-
-                        $this.append(additionalContent); // Append the additional content
-
-                    }
-                });
-            });
-
-            function GetMoreContent() {
-                return  "<p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p><p>This is the div content</p>";
-            }
-        </script>
-
-
-
-<script src="popup.js"></script>
-
-
-
 	</head>
 
 	<body>
