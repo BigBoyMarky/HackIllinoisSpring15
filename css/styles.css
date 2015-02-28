@@ -7,7 +7,8 @@ body {
 	font-family:Arial;
 	font-size:14px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-
+	background-image: url("../images/background.jpg");
+	background-repeat: both;
 }
 
 #navbar {
@@ -216,7 +217,8 @@ body {
 
 #infinite_scrolling_div {
 
-	overflow: scroll;
+	/*overflow: scroll;*/
+	overflow: auto;
 	height: 550px; 
 	padding-left:10px;
 	padding-right:10px;
@@ -232,12 +234,14 @@ body {
 	margin-right:auto;
 	width: 800px;
 	color: #000;
-	border: 2px solid black;
+	border: 3px solid black;
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 10px;
 	margin-top: 20px;
 	word-wrap:break-word;
+	background-color: #fff;
+	border-radius: 10px;
 }
 
 .post .profile {
@@ -257,15 +261,15 @@ body {
 }
 
 .twitterpost {
-	border: 2px solid #55ACEE;
+	border-color: #55ACEE;
 }
 
 .googlepluspost {
-	border: 2px solid #DD4B39;
+	border-color: #DD4B39;
 }
 
 .facebookpost {
-	border: 2px solid #45629D;
+	border-color: #45629D;
 }
 
 
