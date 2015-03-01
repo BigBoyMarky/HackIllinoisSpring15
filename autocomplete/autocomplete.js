@@ -15,7 +15,7 @@ jQuery(function($) {
 	}
 
 		// Basic example
-      var birds_list = ["Asdf", "bfsda", "cdasf", "grea"];
+      var birds_list = ["osamajomaa", "markyang", "eleanoreason", "priyajain"];
       $("input.autocomplete.birds").autocomplete({
         list: birds_list
       });

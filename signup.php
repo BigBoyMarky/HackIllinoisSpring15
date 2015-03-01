@@ -6,6 +6,7 @@ if (isset($_POST['cmd'])) {
     
  addUser($_POST['fname'], $_POST['lname'], $_POST['username'], $_POST['password'], $_POST['emailID'], 
             $_POST['googleID'], $_POST['youtubeID'], $_POST['twitterID']);
+header("Location: index.html");
 }
 /*
 if ($cmd == "signup") {
