@@ -63,7 +63,8 @@ session_start();
                                 $("#infinite_scrolling_div").load("populateHome.php?searchUser="+document.getElementById('searchUser').value);
                              })
                         </script>
-                    </li><li id = "settings">
+                    </li><li id = "invite">
+                    <button class = "invitebutton">Invite a Friend!</button></li><li id = "settings">
 		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "logout">
 		            <a><button class = "logoutbutton">Logout</button></a>
 
