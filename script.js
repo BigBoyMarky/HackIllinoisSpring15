@@ -111,11 +111,12 @@ function filterPosts(name) {
         var namePost = name + "post";
         $( "main" ).find( namePost ).css( "display", "block" );
     }
-}
+};
 
 function boxHeight() {
     var yourHeight = $(window).height();
-    document.getElementById("infinite_scrolling_div").height = yourHeight;
+    document.getElementById("infinite_scrolling_div").style.height = yourHeight - 67 + "px";
+    //document.getElementById("infinite_scrolling_div").style.backgroundColor = "#f0f";
 
-}
+};
 
