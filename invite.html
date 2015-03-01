@@ -3,6 +3,7 @@
 <html>
 
 	<head>
+        <? session_start(); ?>
 		
 		<meta charset="utf-8">
 
@@ -44,9 +45,9 @@
     <a class="b-close">x<a/>
     <form><center>
     	<h1>Login to Website</h1>
-    	Username: <input type = "text" name "username">
+    	Username: <input type = "text" name="username">
     	<br/>
-    	Password: <input type = "text" name "password">
+    	Password: <input type = "text" name="password">
     	<br/><br/>
     	<button type = "button" id = "loginbutton">Login</button>
 
@@ -71,14 +72,14 @@
 
 
 		<div id = "signup" class="bigBox">
-
-		<form>
-
+            <form method="get" action="invite.php">
 			<h1><span></span>Invite Someone to Social Union!</h1>
 			<br>
 			<p style="text-align:center;">
-			<input type = "text" name "invited" placeholder = "Enter their email..">
-				<a href = "home.php"><button type = "button" id = "signup_button">Invite!</button></a>
+            
+			<input type = "text" name="invited" placeholder = "Enter their email..">
+				<input type = "submit" value = "Invite!" >
+            
 			</p>
 
 			</form>

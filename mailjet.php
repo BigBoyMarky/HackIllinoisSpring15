@@ -6,7 +6,7 @@ function sendEmail($recEamil, $recName, $msg) {
     $mj = new Mailjet( $apiKey, $secretKey );
     $params = array(
         "method" => "POST",
-        "from" => "admin@socialunion.work",
+        "from" => "jomaao@miamioh.edu",
         "to" => $recEamil,
         "subject" => "Hello ".$recName."!",
         "text" => $msg

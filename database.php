@@ -22,7 +22,7 @@ function addUser($fname, $lname, $username, $password, $emailID, $googleID, $you
 
 function signIn($username, $password) {
     global $con;
-    $q = $con->prepare("select id, username, password, salt from users where username = ?");
+    $q = $con->prepare("select id, username, password, salt, emailID from users where username = ?");
     
     $q->bind_param('s', $username);
     $q->execute();
@@ -30,6 +30,7 @@ function signIn($username, $password) {
     $array = $result->fetch_array();
     $salt  = $array[3];
     $uPass = $array[2];
+    removeRequest($r[4]);
     $encPwd = crypt($password, $salt);
     $retArr = array();
     
@@ -54,6 +55,8 @@ function addRequest($requester, $requestee) {
     $q= $con->prepare("insert into requests (requester, requestee) values (?,?)");
     $q->bind_param('ss', $requester, $requestee);
     $q->execute();
+    $msg = "Hello! The user ".$requester." has is a member of the Social Union family and would like to invite you to have fun, socialize and have good time with us!";
+    sendEmail($requestee, '', $msg);
 }
 
 function removeRequest($requestee) {
