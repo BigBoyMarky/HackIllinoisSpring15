@@ -48,8 +48,8 @@
 
 		            <li><a href = ""><? session_start(); echo "<font color='white'>".$_SESSION["user"]."</font>";?></a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
 		            <!--<input type="search" placeholder = "Search someone.." name = "searching" id = "autocomplete">-->
-		            <input type = "text" class="autocomplete birds"></li><li>
-                    <button>Search</button></li><li id = "settings">
+		            <form method="get" action="populateHome.php"><input type = "text" name = "searchUser" class="autocomplete birds"></li><li>
+                    <input type="submit" value="Search"></li></form><li id = "settings">
 		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "logout">
 		            <a><button class = "logoutbutton">Logout</button></a>
 
