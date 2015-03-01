@@ -377,6 +377,7 @@ body {
 
 
 
+
 #signup_button {
 	height:25px;
 	width:80px;
@@ -390,6 +391,76 @@ body {
 	border-radius:5px;
 	font-size:16px;
 }
+
+
+
+
+
+
+
+#notloggedin {
+	width:50%;
+	height:auto;
+	padding-bottom: 10px;
+	margin:0 auto;
+	font-size:12px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:bold;
+	background-color:#fff;
+	border:3px solid #fff;
+	border-radius:30px;
+	opacity:0.9;
+	margin-top:50px;
+	margin-bottom: 20px;
+}
+
+#notloggedin_left {
+	width:50%;
+	float:left;
+	text-align:center;
+	height:330px;
+}
+
+#notloggedin_right {
+	padding-top:50px;
+	margin-left:50%;
+	text-align:center;
+	height:330px;
+}
+
+
+#newuser_button {
+
+	height:50px;
+	width:200px;
+
+}
+
+#returninguser_button {
+
+	height:50px;
+	width:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #about {
@@ -434,8 +505,6 @@ input[type=search] {
 	width: 100%;    
 
 }
-
-
 
 
 
