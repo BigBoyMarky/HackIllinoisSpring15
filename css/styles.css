@@ -6,9 +6,7 @@ body {
 	font-size:14px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	background-image: url("../images/background2.jpg");
-	    background-size:   cover;                      /* <------ */
     background-repeat: both;
-    background-position: center center;            /* optionally, center the image */
 
 }
 

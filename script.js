@@ -116,7 +116,6 @@ function filterPosts(name) {
 function boxHeight() {
     var yourHeight = $(window).height();
     document.getElementById("infinite_scrolling_div").style.height = yourHeight - 67 + "px";
-    //document.getElementById("infinite_scrolling_div").style.backgroundColor = "#f0f";
 
 };
 
