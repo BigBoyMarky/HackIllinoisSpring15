@@ -45,7 +45,7 @@
 			    
 		        <ul>
 
-		            <li><a href = "">Person's Name</a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
+		            <li><a href = ""><? session_start(); echo "<font color='white'>".$_SESSION["user"]."</font>";?></a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
 		            <!--<input type="search" placeholder = "Search someone.." name = "searching" id = "autocomplete">-->
 		            <input type = "text" class="autocomplete birds"></li><li id = "settings">
 		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "logout">
@@ -60,9 +60,9 @@
     <a class="b-close">x<a/>
     <form><center>
     	<h1>Login to SocialUnion</h1>
-    	Username: <input type = "text" name "username">
+    	Username: <input type = "text" name ="username">
     	<br>
-    	Password: <input type = "text" name "password">
+    	Password: <input type = "text" name ="password">
     	<br><br>
     	<button type = "button" id = "loginbutton">Login</button>
 

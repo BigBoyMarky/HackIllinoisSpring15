@@ -42,17 +42,17 @@
 <!-- Element to pop up -->
 <div id="element_to_pop_up">
     <a class="b-close">x<a/>
-    <form><center>
+    <form method="post" action="signin.php"><center>
     	<h1>Login to Website</h1>
-    	Username: <input type = "text" name "username">
+    	Username: <input type = "text" name ="username">
     	<br/>
-    	Password: <input type = "text" name "password">
+    	Password: <input type = "password" name ="password">
     	<br/><br/>
-    	<button type = "button" id = "loginbutton">Login</button>
+    	<input type = "submit" value = "Login" id = "loginbutton">
 
     	<br><br>
 
-    	Don't have an account?  <a href = "signup.html">Sign Up here!</a>
+    	Don't have an account?  <a href = "signup.php">Sign Up here!</a>
     </center></form>
 	</div>
 
@@ -79,14 +79,14 @@
 
 			<h1>Are You a New User?</h1>
 			
-				<a href = "signup.html"><button type = "button" id = "newuser_button">New User</a></button>
+				<a href = "signup.php"><button type = "button" id = "newuser_button">New User</button></a>
 			</div>
 			
 			<div id = "notloggedin_right">
 			
 			<h1>Are You a Returning User?</h1>
 			
-			<button type = "button" class = "returninguser_button" id = "my-button">Returning User</button>
+            <button type = "button" class = "returninguser_button" id = "my-button">Returning User</button>
 
 			</div>
 
