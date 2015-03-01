@@ -5,8 +5,10 @@ body {
 	font-family:Arial;
 	font-size:14px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-	background-image: url("../images/background.jpg");
-	background-repeat: both;
+	background-image: url("../images/background2.jpg");
+	    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
 
 }
 
@@ -377,16 +379,16 @@ body {
 }
 
 input[type=search] { 
-	color: red;  
+	/*color: red;*/  
 	text-align: left;
 	cursor: pointer;
 	/*display: block; */
-	width: 100%; 
-	letter-spacing: 4px;        
+	width: 100%;
+	/*letter-spacing: 4px;        
 	text-shadow: 0 0 2px black;       
-	word-spacing: 20px;               
+	word-spacing: 20px;*/               
 }
 
 ::-webkit-input-placeholder {
-  color: orangered;
+  /*color: orangered;*/
 }
