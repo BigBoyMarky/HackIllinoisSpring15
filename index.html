@@ -17,6 +17,9 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+
+
+
 		<script src = "script.js"></script>
 
 	</head>
@@ -43,7 +46,8 @@
 		        <ul>
 
 		            <li><a href = "">Person's Name</a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
-		            <input type="search" placeholder = "Search someone.."></li><li id = "settings">
+		            <!--<input type="search" placeholder = "Search someone.." name = "searching" id = "autocomplete">-->
+		            <input type = "text" class="autocomplete birds"></li><li id = "settings">
 		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "login">
 		            <a><button class = "loginbutton" id = "my-button">Login</button></a>
 
@@ -150,6 +154,19 @@
 
 
 </div>
+
+
+
+
+	
+<script type="text/javascript" src="autocomplete/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="autocomplete/jquery.ui.autocomplete.js"></script>
+<script type="text/javascript" src="autocomplete/autocomplete.js"></script>
+
+
+
+
+
 	</body>
 
 </html>
