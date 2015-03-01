@@ -228,7 +228,7 @@ body {
 #infinite_scrolling_div {
 	z-index: 1;
 	overflow: auto;
-	height: 550px; 
+	height: 1000px; 
 	padding-left:10px;
 	padding-right:10px;
 	margin: auto -20px;
@@ -392,3 +392,4 @@ input[type=search] {
 ::-webkit-input-placeholder {
   /*color: orangered;*/
 }
+
