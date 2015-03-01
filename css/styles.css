@@ -378,17 +378,31 @@ body {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+/*
+#navbar ul li:hover {
+	
+	-webkit-opacity:1;
+	-moz-opacity:1;
+	opacity:1;
+	-webkit-transition:all 1.5s ease;
+	-moz-transition:all 1.5s ease;
+	-ms-transition:all 1.5s ease;
+	-o-transition:all 1.5s ease;
+	transition:all 1.5s ease;
+	background-color:#97C9FC;
+	
+}
+*/
 input[type=search] { 
-	/*color: red;*/  
+
 	text-align: left;
 	cursor: pointer;
-	/*display: block; */
-	width: 100%;
-	/*letter-spacing: 4px;        
-	text-shadow: 0 0 2px black;       
-	word-spacing: 20px;*/               
+	width: 100%;    
+
 }
 
-::-webkit-input-placeholder {
-  /*color: orangered;*/
+.search :hover {
+
+	clear;
+
 }
