@@ -49,8 +49,9 @@ session_start();
 		        <ul>
 
 
-		            <li><a href = ""><? session_start(); echo "<font color='white'>".$_SESSION["user"]."</font>";?></a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
+		            <li><a href = ""><? session_start(); echo "<font color='white'>".$_SESSION["user"]."</font>";?></a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#002E72;">
 		            <!--<input type="search" placeholder = "Search someone.." name = "searching" id = "autocomplete">-->
+
 		            
                         <input type = "text" id = "searchUser" class="autocomplete birds"></li>
                     <li>
