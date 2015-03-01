@@ -12,9 +12,9 @@ function sendEmail($recEamil, $recName, $msg) {
         "text" => $msg
     );
     $result = $mj->sendEmail($params);
-    if ($mj->_response_code == 200)
+    /*if ($mj->_response_code == 200)
        echo "success - email sent";
     else
-       echo "error - ".$mj->_response_code;
+       echo "error - ".$mj->_response_code;*/
 }
 ?>

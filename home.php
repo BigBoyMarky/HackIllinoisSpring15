@@ -64,7 +64,7 @@ session_start();
                              })
                         </script>
                     </li><li id = "invite">
-                    <button class = "invitebutton">Invite a Friend!</button></li><li id = "settings">
+                    <a href = "invite.html"><button class = "invitebutton">Invite a Friend!</button></a></li><li id = "settings">
 		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "logout">
 		            <a><button class = "logoutbutton">Logout</button></a>
 
