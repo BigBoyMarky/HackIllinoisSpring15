@@ -90,3 +90,26 @@ $(".contentfade").delay(500).fadeIn(1000)
 
 $(document).ready(function(){
 $("#navbar").delay(300).slideDown(450);});
+
+// var checkList = ["facebook", "googleplus", "twitter", "youtube"];
+
+// function filterPosts() {
+//     for (i = 0; i < checkList.length; i++) {
+//         var name = checkList[i];
+//         var nameCheck = name + "Check";
+//         if (document.getElementById(nameCheck).checked) {
+//             var namePost = "." + name + "post";
+//             $( "main" ).find( namePost ).css( "display", "block" );
+//         }
+        
+//     }
+// }
+
+function filterPosts(name) {
+    var nameCheck = name + "Check";
+    if (document.getElementById(nameCheck).checked == true) {
+        var namePost = name + "post";
+        $( "main" ).find( namePost ).css( "display", "block" );
+    }
+}
+

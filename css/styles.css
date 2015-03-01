@@ -127,16 +127,15 @@ body {
 }
 
 #settingspanel {
-
+	z-index: 20;
 	font-size:14px;
 	position:fixed;
-	right:5px;
+	right:0px;
 	top: 68px;
-	width: 216px;
+	width: 230px;
 	padding-right:5px;
 	display:none;
 	background-color: rgba(151,201,252,0.5);
-	border-bottom-right-radius:10px;
 	border-bottom-left-radius:10px; 
 }
 
@@ -240,9 +239,11 @@ body {
 }
 
 .post {
+	/*display:none; */
+	z-index: 2;
 	margin-left:auto;
 	margin-right:auto;
-	width: 800px;
+	width: 770px;
 	color: #000;
 	border: 3px solid black;
 	padding-right: 10px;
@@ -306,7 +307,8 @@ body {
 
 #signup {
 	width:50%;
-	height:500px;
+	height:auto;
+	padding-bottom: 10px;
 	margin:0 auto;
 	font-size:12px;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
@@ -316,25 +318,20 @@ body {
 	border-radius:10px;
 	opacity:0.9;
 	margin-top:50px;
-
-
+	margin-bottom: 20px;
 }
 
 #signup_left {
-
 	width:50%;
 	float:left;
 	text-align:center;
 	height:330px;
-
 }
 
 #signup_right {
-
 	margin-left:50%;
 	text-align:center;
 	height:330px;
-
 }
 
 
@@ -344,3 +341,52 @@ body {
 	border-radius:5px;
 }
 
+#about {
+	width:50%;
+	height:auto;
+	margin:0 auto;
+	font-size:12px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:bold;
+	background-color:#fff;
+	border:3px solid #fff;
+	border-radius:10px;
+	opacity:0.9;
+	margin-top:50px;
+}
+
+#about p {
+	padding: 10px;
+}
+
+.bigBox h1 {
+	text-align: center;
+	color: #5978EF;
+ 	text-shadow: 0 1px 0 #455EB7,
+               0 2px 0 #455EB7,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+input[type=search] { 
+	color: red;  
+	text-align: left;
+	cursor: pointer;
+	/*display: block; */
+	width: 100%; 
+	letter-spacing: 4px;        
+	text-shadow: 0 0 2px black;       
+	word-spacing: 20px;               
+}
+
+::-webkit-input-placeholder {
+  color: orangered;
+}

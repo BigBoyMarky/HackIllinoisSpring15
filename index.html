@@ -42,8 +42,11 @@
 			    
 		        <ul>
 
-		           <li><a href = "">Person's Name</a></li><li id = "settings">
-		            <a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a><li id = "login">
+		           <li><a href = "">Person's Name</a></li>
+                   <li id="search"><input type="search"/></li>
+                   <li id = "settings">
+		            <a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a>
+                    <li id = "login">
 		            <a><button class = "loginbutton" id = "my-button">Login</button></a>
 
 		        	</li>
@@ -54,7 +57,7 @@
 <div id="element_to_pop_up">
     <a class="b-close">x<a/>
     <form><center>
-    	<h1>Login to Website</h1>
+    	<h1>Login to SocialUnion</h1>
     	Username: <input type = "text" name "username">
     	<br>
     	Password: <input type = "text" name "password">
@@ -63,7 +66,7 @@
 
     	<br><br>
 
-    	Don't have an account?  <a href = "signup.html">Signup here!</a>
+    	Don't have an account?  <a href = "signup.html" id="signupLink">Sign Up here!</a>
     </center></form>
 	</div>
 
@@ -81,18 +84,19 @@
 
 
 
-		<div id = "settingspanel">
+		<div id = "settingspanel" onmouseout="filterPosts()">
         	
         		<h1>Your Social Medias</h1>
             <ul>
-        		<li><input type = "checkbox">Facebook</li>
-        		<li><input type = "checkbox">Google+</li>
-        		<li><input type = "checkbox">Twitter</li>
+        		<li><input type = "checkbox" id="facebookCheck" onclick="filterPosts('facebook')"/>Facebook</li>
+        		<li><input type = "checkbox" id="googleplusCheck" onclick="filterPosts('googleplus')"/>Google+</li>
+        		<li><input type = "checkbox" id="twitterCheck" onclick="filterPosts('twitter')"/>Twitter</li>
+                <li><input type = "checkbox" id="youtubeCheck" onclick="filterPosts('youtube')"/>Youtube</li>
             </ul>
         		<h1>Other Social Medias</h1>
             <ul>
-        		<li><input type = "checkbox">Social Media 1</li>
-        		<li><input type = "checkbox">Social Media 2</li>
+        		<li><input type = "checkbox"/>Social Media 1</li>
+        		<li><input type = "checkbox"/>Social Media 2</li>
         	</ul>
         </div>
 
