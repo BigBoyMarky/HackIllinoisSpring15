@@ -228,7 +228,7 @@ body {
 #infinite_scrolling_div {
 	z-index: 1;
 	overflow: auto;
-	height: 1000px; 
+	height: 550px; 
 	padding-left:10px;
 	padding-right:10px;
 	margin: auto -20px;
