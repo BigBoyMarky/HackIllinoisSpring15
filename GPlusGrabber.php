@@ -5,7 +5,7 @@ function getStatuses($gid) {
     $streams = file_get_contents('https://www.googleapis.com/plus/v1/people/' . $gid . '/activities/public?key='. $appKey);
     $array = json_decode($streams, true);
     $statuses = array();
-    foreach($array as $value) {
+    foreach($array['items'] as $value) {
         $statuses[] = $value['url'];
     }
     return $statuses;

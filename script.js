@@ -51,7 +51,7 @@ $(document).ready(function () {
         $(".scroll-height").text(height);
 
         if (isScrolledToEnd) {
-            var additionalContent = GetMoreContent("twitter", "images/placement/placementbird.jpg", "Tweet", "DateHere"); // Get the additional content
+           //   var additionalContent = GetMoreContent("twitter", "images/placement/placementbird.jpg", "Tweet", "DateHere"); // Get the additional content
 
             $this.append(additionalContent); // Append the additional content
 

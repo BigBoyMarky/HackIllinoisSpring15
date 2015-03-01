@@ -46,7 +46,7 @@ function getUser($username) {
     $q->bind_param('s', $username);
     $q->execute();
     $result=$q->get_result();
-    return $result;
+    return $result->fetch_array();
 }
 
 function addRequest($requester, $requestee) {
@@ -81,6 +81,15 @@ function addFollowing($follower, $followee) {
     $q= $con->prepare("insert into followings (follower, followee) values (?,?)");
     $q->bind_param('ss', $follower, $followee);
     $q->execute();
+}
+
+function getFollowing($follower) {
+    global $con;
+    $q = $con->prepare("select followee from followings where follower = ?");
+    $q->bind_param('s', $follower);
+    $q->execute();
+    $result = $q->get_result();
+    return $result->fetch_array();
 }
 
 ?>
