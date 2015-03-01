@@ -228,7 +228,7 @@ body {
 #infinite_scrolling_div {
 	z-index: 1;
 	overflow: auto;
-	height: 550px; 
+	height: 1000px; 
 	padding-left:10px;
 	padding-right:10px;
 	margin: auto -20px;
@@ -378,31 +378,10 @@ body {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-/*
-#navbar ul li:hover {
-	
-	-webkit-opacity:1;
-	-moz-opacity:1;
-	opacity:1;
-	-webkit-transition:all 1.5s ease;
-	-moz-transition:all 1.5s ease;
-	-ms-transition:all 1.5s ease;
-	-o-transition:all 1.5s ease;
-	transition:all 1.5s ease;
-	background-color:#97C9FC;
-	
-}
-*/
 input[type=search] { 
 
 	text-align: left;
 	cursor: pointer;
 	width: 100%;    
-
-}
-
-.search :hover {
-
-	clear;
 
 }
