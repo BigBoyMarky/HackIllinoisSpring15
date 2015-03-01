@@ -113,3 +113,9 @@ function filterPosts(name) {
     }
 }
 
+function boxHeight() {
+    var yourHeight = $(window).height();
+    document.getElementById("infinite_scrolling_div").height = yourHeight;
+
+}
+
