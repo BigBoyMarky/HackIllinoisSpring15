@@ -94,6 +94,8 @@ body {
 	
 }
 
+
+
 #navbar ul li a, text {
 	
 	color:#FFFFFF;
@@ -393,6 +395,25 @@ body {
 
 }
 
+#searchButton {
+	height: 17px;
+	width: 17px;
+	border: none;
+	vertical-align: top;
+	margin-top: 1px;
+	margin-left: -3px;
+	background-color: #002E72;
+}
+#searchButton img {
+	height: 17px;
+	width: 17px;
+}
+
+.search {
+	line-height: 18px;
+	padding-left: 5px;
+}
+
 
 
 
@@ -558,4 +579,7 @@ ul.jq-ui-autocomplete li {
 ul.jq-ui-autocomplete li.active { 
   background-color: #3875d7; 
   color: #fff;
+}
+
+.undoFade {
 }
