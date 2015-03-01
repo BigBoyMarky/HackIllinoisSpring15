@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+
+		<title>
+			
+			SocialUnion
+
+		</title>
+
+
+		<link rel="stylesheet" href="css/styles.css" type = "text/css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+		<script src = "script.js"></script>
+
+	</head>
+
+	<body onload="boxHeight()">
+
+
+	<div id = "navbar">
+
+			<div id = "logo_background">
+		    
+		    	<a href = "index.html"><img id = "logo" src = "images/SocialUnionLogo.png"></a>
+		    
+		    </div>
+		    
+		    <div id = "profilepicture">
+		    
+		    	<img id = "profilepicture" src = "images/placement/placementanon.jpg">
+
+		    </div>
+
+			<div id = "navbar_wrapper">
+			    
+		        <ul>
+
+		            <li><a href = "">Person's Name</a></li><li class="search" style="-webkit-opacity:1;-moz-opacity:1;opacity:1;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;background-color:#18202A;">
+		            <!--<input type="search" placeholder = "Search someone.." name = "searching" id = "autocomplete">-->
+		            <input type = "text" class="autocomplete birds"></li><li id = "settings">
+		        	<a><button class = "settingsbutton" onclick="showSettings()">Settings</button></a></li><li id = "login">
+		            <a><button class = "loginbutton" id = "my-button">Login</button></a>
+
+		        	</li>
+
+		        </ul>
+
+<!-- Element to pop up -->
+<div id="element_to_pop_up">
+    <a class="b-close">x<a/>
+    <form><center>
+    	<h1>Login to SocialUnion</h1>
+    	Username: <input type = "text" name "username">
+    	<br>
+    	Password: <input type = "text" name "password">
+    	<br><br>
+    	<button type = "button" id = "loginbutton">Login</button>
+
+    	<br><br>
+
+    	Don't have an account?  <a href = "signup.html" id="signupLink">Sign Up here!</a>
+    </center></form>
+	</div>
+
+			</div>
+
+	</div> <!-- end navbar div -->
+
+	<div class = "contentfade">
+
+
+
+		<div id = "whitespace">
+		</div>
+		
+
+
+
+		<div id = "settingspanel" onmouseout="filterPosts()">
+        	
+        		<h1>Your Social Medias</h1>
+            <ul>
+        		<!--<li><input type = "checkbox" id="facebookCheck" onclick="filterPosts('facebook')"/>Facebook</li>-->
+        		<li><input type = "checkbox" id="googleplusCheck" onclick="filterPosts('googleplus')"/>Google+</li>
+        		<li><input type = "checkbox" id="twitterCheck" onclick="filterPosts('twitter')"/>Twitter</li>
+                <li><input type = "checkbox" id="youtubeCheck" onclick="filterPosts('youtube')"/>Youtube</li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div id = "infinite_scrolling_div">
+
+        <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+        <div class="post googlepluspost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+
+        <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+        <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+
+
+        <div class="post googlepluspost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+
+        <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+        <div class="post twitterpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+
+
+        <div class="post googlepluspost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+
+
+
+
+        <div class="post facebookpost"><img src="ProfilePicHere.jpg" class="profile"/>alskdfjdsklfjadslkjalsdkfjaslkfjsldfhaengaeurighakfjasdjfajfalngieruofjieorhtoweqrtueoriqwhgaosdngvjkdghasfhasdlkfjalskfjalksdjfaongoiuebnvlakghweirgjfoairegnaiouergnoaiergjaosdjfasdjfaofnweourfnorwn<div class="bottom">Posted from Google Plus at Jan 1, 2010</div></div>
+            
+
+
+
+        </div> <!-- end div for the infinite scrolling --> 
+
+
+
+</div>
+
+
+
+
+	
+<script type="text/javascript" src="autocomplete/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="autocomplete/jquery.ui.autocomplete.js"></script>
+<script type="text/javascript" src="autocomplete/autocomplete.js"></script>
+
+
+
+
+
+	</body>
+
+</html>

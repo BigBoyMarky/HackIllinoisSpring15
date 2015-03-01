@@ -117,6 +117,17 @@ body {
 
 }
 
+
+#logout {
+
+	position:absolute;
+	display:inline-block;
+	right:0px;
+	border-left:2px solid;
+	border-color:#27303E;
+
+}
+
 #settings {
 
 	position:absolute;
@@ -181,6 +192,17 @@ body {
 
 }
 
+.logoutbutton {
+
+    background:none!important;
+    border:none;
+	font-size:12px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:bold;
+    color:#FFFFFF;
+    padding:0!important;
+
+}
 
 
 #element_to_pop_up { 
@@ -436,7 +458,7 @@ body {
 
 }
 
-#returninguser_button {
+.returninguser_button {
 
 	height:50px;
 	width:200px;
