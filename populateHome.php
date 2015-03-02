@@ -1,5 +1,3 @@
-<html>
-<body>
 <?
 //session_start();
 require_once("database.php");
@@ -39,7 +37,7 @@ foreach ($videos as $vid) {
     ";
 }
 
-$gPosts = getStatuses('117980485441415211712');
+$gPosts = getStatuses($user[3]);
 foreach ($gPosts as $post) {
     echo "
         <div class='post twitterpost'>
@@ -52,5 +50,3 @@ foreach ($gPosts as $post) {
     ";
 }
 ?>
-</body>
-</html>

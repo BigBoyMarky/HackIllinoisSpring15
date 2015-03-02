@@ -2,11 +2,11 @@
 require_once "creds.php";
 require_once "mailjet.php";
 
-$con = new mysqli("localhost",$user,$password, "socialUnion");
+$con = new mysqli("198.71.225.61",$user,$password, "socialUnion");
 
 function addUser($fname, $lname, $username, $password, $emailID, $googleID, $youtubeID, $twitterID) {
     global $con;
-    //removeRequest($username);
+    removeRequest($emailID);
     $bytes = openssl_random_pseudo_bytes(8, $cstrong);
     $salt  = bin2hex($bytes);
     $encPwd = crypt($password, $salt);
@@ -18,6 +18,7 @@ function addUser($fname, $lname, $username, $password, $emailID, $googleID, $you
     
     $q->bind_param('sssssssss', $fname, $lname, $username, $encPwd, $salt, $emailID, $googleID, $youtubeID, $twitterID);
     $q->execute();
+    
 }
 
 function signIn($username, $password) {
@@ -30,7 +31,7 @@ function signIn($username, $password) {
     $array = $result->fetch_array();
     $salt  = $array[3];
     $uPass = $array[2];
-    removeRequest($r[4]);
+    //removeRequest($r[4]);
     $encPwd = crypt($password, $salt);
     $retArr = array();
     
